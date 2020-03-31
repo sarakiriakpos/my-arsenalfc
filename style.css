@@ -1,35 +1,222 @@
-#preloader{
-	position: fill;
-	top: 100%;
-	left: 100%;
-	right: 100%;
-	width: 100%;
-	height: 100%;
-	bottom: 100%;
-	background-color: #f00;
-	color: white;
-	z-index: 999999
+html {
+    margin: 0;
+    padding: 0;
 }
+body {
+    font-family: normal: cursive;
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 1em;
+    margin: 0;
+}
+nav {
+    padding: 50px 0;
+    min-width: 500px; 
+}
+nav ul {
+    background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    padding: 10px; 
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+ }
+h1 {
+    font-size: 15pt;
+    color: #ff0000;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+h1 span {
+    border: dashed 6px #ff0000;
+    padding: 10px;
+    font-size: 1em;
+    text-shadow: 15px 5px 10px black, -3px 6px 5px #ff0000;
+    text-transform: none;
+    font-style: italic;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+p {  
+    padding: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    border: ;
+}
+div p:first-letter {
+    font-size: 2.3em;
+    line-height: 0;
+    float: left;
+    margin-bottom: .30em;
+    margin-right: .15em;
+}
+a:hover {
+    color: red;
+}
+a:link {
+    text-decoration: none;
+}
+figcaption {
+    background: white;
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+  font-style: italic;  
 
-hi span{
-	border-radius: 20px;
-    background-color: green;
-    color: white;
-    padding: 50px;
 }
-
-/* this is to create a circle with border-radious*/
-div {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: green;
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#header {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Arsenal_Stadium_Highbury_east_facade.jpg");
+    background-size: cover;
+}
+#header img {
+    display: block;
+    width: 2px;
+    height: 80px;
+    margin: auto;
+}
+#header p {
+    font-size: 25pt;
+    color: #3b464c;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+.selected {
+    background-color: #f36f48;
+    font-weight: bold;
     color: white;
 }
-div {
-    width: 300px;
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+progress {
+    width: 70%;
+    height: 20px;
+    color: #3fb6b2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
+iframe, audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3fb6b2;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #f36f48;
+}
+form {
+    text-align: center;
+    margin-top: 0;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
     height: 100px;
-    background-color: #9ACD32;
-    box-shadow: 10px 10px #888888;
-    list-style-type: 
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+.copyright {
+    font-size: 10pt;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
 }
